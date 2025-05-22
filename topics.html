@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="author" content="aroujikarim"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon genius.png">
+    <title>Genius</title>
+</head>
+
+<body>
+  <header>
+    <section id="content">
+      <div class="container-header">
+        <!-- Logo principal -->
+        <a href="index.html">
+          <img src="genius by ymg 2.svg" alt="Logo Enlightened" class="logo">
+        </a>
+  
+        <!-- Menu desktop -->
+        <nav class="nav-menu">
+          <ul>
+            <!-- Bloc sélection de langue -->
+            <li class="language-selector">
+              <select id="language-select">
+                <option value="index.html">English</option>
+                <option value="francais.html">Français</option>
+              </select>
+            </li>
+  
+            <!-- Liens de navigation -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topics.html">Topics</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="genius.html">Genius</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+  
+        <!-- Icône hamburger -->
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+  
+        <!-- Menu mobile -->
+        <nav class="nav-menu-mobile" id="navMenuMobile">
+          <!-- Logo en haut -->
+          <div class="mobile-header">
+            <img src="genius by ymg.svg" alt="Logo Genius" class="mobile-logo">
+          </div>
+  
+          <!-- Liens du menu -->
+          <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topics.html">Topics</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="genius.html">Genius</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+  
+          <!-- Carré essentials -->
+          <div class="box">
+            <p>Pursue your enlightenment :</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/enlightened.genius/" target="_blank" class="instagram-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="separator-box"></div>
+            <li class="language-selector">
+              <select id="language-select-mobile">
+                <option value="index.html">English</option>
+                <option value="francais.html">Français</option>
+              </select>
+            </li>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <hr style="height: 20% ; background-color: #8b949e; border: none;">
+
+
+
+
+
+
+  <footer id="contact">
+      <div class="ep-square">
+        <img src="genius by ymg 2.svg" alt="Image Enlightened" style ="height: 50px; width: 50px; margin-bottom: -10px;">
+      </div>
+        <p class="footer-text"><b> Pursue your enlightenment :</b></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/enlightened.genius/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p style = "font-size: 12px;">&copy; 2025 Genius</p>
+    </footer>
+
+    <button class="Btn scroll-to-top">
+      <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
+        <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+      </svg>
+    </button>
+    
+    
+    <script src="script.js"></script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const langSelect = document.getElementById("language-select");
+        langSelect.value = "index.html"; // Force affichage English
+    
+        langSelect.addEventListener("change", function () {
+          if (this.value !== "index.html") {
+            window.location.href = this.value;
+          }
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const langSelect = document.getElementById("language-select-mobile");
+        langSelect.value = "index.html"; // Force affichage English
+    
+        langSelect.addEventListener("change", function () {
+          if (this.value !== "index.html") {
+            window.location.href = this.value;
+          }
+        });
+      });
+    </script>    
+    
+</body>
+</html>
