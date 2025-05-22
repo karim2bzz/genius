@@ -25,7 +25,7 @@
 
   @media screen and (max-width: 768px) { 
     .language-selector select {
-      padding: 10px 10px;
+      padding: 15px 15px;
       margin-top: 10px;
       justify-content: left;
       font-size: 10px;
