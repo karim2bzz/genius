@@ -765,6 +765,24 @@ hr {
     font-size: 14px;
   }
 
+  .topics-button {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #f4f6fc;
+    color: #0d1117;
+    text-decoration: none;
+    padding: 0.9rem;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
   *:focus {
     outline: none !important;
     box-shadow: none !important;
