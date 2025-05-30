@@ -25,10 +25,10 @@
 
   @media screen and (max-width: 768px) { 
     .language-selector select {
-      padding: 15px 15px;
+      padding: 6px 6px;
       margin-top: 10px;
       justify-content: left;
-      font-size: 11px;
+      font-size: 10px;
       border: 1px solid #2d333b;
       border-radius: 5px;
       background-color: #020509;
@@ -178,7 +178,7 @@ body {
   .mobile-nav-links li a {
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
   }
   
@@ -398,6 +398,7 @@ hr {
     color: #8b949e;
     font-size: 13px;
   }
+
 
   .second-bloc {
     display: flex;
@@ -791,4 +792,156 @@ hr {
 * {
     -webkit-tap-highlight-color: transparent;
   }
+
+  /* CSS de la section - Classes préfixées et pas de Tailwind */
+        .yt-rec-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin: 20px auto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+        .yt-rec-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+        .yt-rec-description-text {
+            color: #4b5563;
+            margin-bottom: 24px;
+        }
+        .yt-rec-btn {
+            background-image: linear-gradient(to right, #6366f1, #8b5cf6);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            border: none;
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .yt-rec-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+        .yt-rec-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+        .yt-rec-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .yt-rec-video-grid { /* Nouvelle classe pour le conteneur de grille */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Rend la grille responsive */
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .yt-rec-video-item { /* Nouvelle classe pour chaque élément vidéo */
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden; /* Pour s'assurer que les coins arrondis de l'image sont respectés */
+        }
+        .yt-rec-video-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+        .yt-rec-video-item.hidden {
+            display: none; /* Pour masquer les cartes vides */
+        }
+        .yt-rec-video-preview { /* Classe pour le lien de l'image */
+            display: block;
+            width: 100%;
+            height: 180px; /* Hauteur fixe pour la cohérence */
+            border-radius: 8px;
+            overflow: hidden; /* S'assure que l'image respecte le border-radius */
+            margin-bottom: 8px;
+        }
+        .yt-rec-video-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Couvre la zone, rognant si nécessaire */
+            border-radius: 8px; /* Appliquer le border-radius à l'image aussi */
+        }
+        .yt-rec-video-title { /* Classe pour le titre de la vidéo */
+            font-size: 18px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .yt-rec-video-description { /* Classe pour la description de la vidéo */
+            color: #4b5563;
+            font-size: 14px;
+            margin-bottom: 8px;
+            line-height: 1.5;
+            flex-grow: 1; /* Permet à la description de prendre l'espace restant */
+        }
+        .yt-rec-video-link { /* Classe pour le lien "Voir sur YouTube" */
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block; /* Pour que le lien ne prenne pas toute la largeur */
+            word-wrap: break-word;
+            margin-top: auto; /* Pousse le lien vers le bas de la carte */
+        }
+        .yt-rec-video-link:hover {
+            text-decoration: underline;
+        }
+        .yt-rec-loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #6366f1;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: none;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .yt-rec-message-box {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: none;
+        }
+        .yt-rec-message-box.error {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border-color: #ef4444;
+        }
+        .yt-rec-btn[disabled] {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
   
