@@ -1,4 +1,5 @@
 /* fiche style css */
+
 @keyframes pulseLight {
     0% {
       box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
@@ -132,7 +133,7 @@ body {
     right: 0;
     width: 85%;
     height: 92vh; /* Utilise la hauteur de l'écran */
-    background-color: #0d1117;
+    background-color: #020509;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -290,7 +291,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .logo {
-      height: 55px;
+      height: 50px;
       margin-right: 50px;
       margin-top: 10px;
     }
@@ -298,7 +299,7 @@ body {
 
   @media screen and (min-width: 768px) {
     .logo {
-      height: 62px;
+      height: 50px;
       margin-right: 50px;
       margin-top: 10px;
     }
@@ -366,6 +367,61 @@ hr {
 * {
     -webkit-tap-highlight-color: transparent;
   }
+
+
+.separator-footer {
+  width : 94%;
+  height: 1px;
+  background-color: #2d333b;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+  .breadcrumbs {
+    margin: auto;
+    font-family: 'Figtree', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #2d333b;
+    border-radius: 7px;
+    background-color: #0d1117;
+    padding: 4px;
+    font-family: Helvetica, sans-serif;
+  }
+
+  @media screen and (min-width: 768px) { 
+    .breadcrumbs {
+    width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 768px) { 
+    .breadcrumbs {
+    width: 90%;
+    }
+  }
+
+
+  .breadcrumbs .breadcrumbs-bloc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+ 
+  .breadcrumbs .breadcrumbs-title {
+    color: #f4f6fc;
+    font-size: 8px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+
+  
+/* FORMULAIRE DE CONTACT */
 
 .formulaire-de-contact {
   max-width: 600px;
@@ -441,8 +497,8 @@ hr {
   color: #0d1117;
   border: none;
   padding: 0.9rem;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 35px;
+  padding-left: 35px;
   margin: 0 auto;
   font-size: 12px;
   text-transform: uppercase;
@@ -493,4 +549,9 @@ hr {
         width: 90%;
     }
      }
+
+a {
+    all: unset;
+    cursor: pointer; /* pour garder le curseur "main" */
+  }
   
