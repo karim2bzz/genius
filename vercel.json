@@ -1,6 +1,12 @@
 {
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/topics", "destination": "/topics.html" },
-    { "source": "/contact", "destination": "/contact.html" }
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/contactfr", "destination": "/contact-fr.html" },
+    { "source": "/francais", "destination": "/francais.html" }
   ]
 }
+
