@@ -16,7 +16,7 @@
     <section id="content">
       <div class="container-header">
         <!-- Logo principal -->
-        <a href="/francais">
+        <a href="index.html">
           <img src="genius by ymg 2.svg" alt="Logo Enlightened" class="logo">
         </a>
   
@@ -26,15 +26,14 @@
             <!-- Bloc sélection de langue -->
             <li class="language-selector">
               <select id="language-select">
-                <option value="/">English</option>
-                <option value="/francais">Français</option>
+                <option value="index.html">English</option>
+                <option value="francais.html">Français</option>
               </select>
             </li>
   
             <!-- Liens de navigation -->
-            <li><a href="/francais">Accueil</a></li>
-            <li><a href="/topics">Sujets</a></li>
-            <li><a href="/contactfr">Contact</a></li>
+            <li><a href="francais.html">Accueil</a></li>
+            <li><a href="contact-fr.html">Contact</a></li>
           </ul>
         </nav>
   
@@ -54,9 +53,8 @@
   
           <!-- Liens du menu -->
           <ul class="mobile-nav-links">
-            <li><a href="/francais">Accueil</a></li>
-            <li><a href="/topics">Sujets</a></li>
-            <li><a href="/contactfr">Contact</a></li>
+            <li><a href="francais.html">Accueil</a></li>
+            <li><a href="contact-fr.html">Contact</a></li>
           </ul>
   
           <!-- Carré essentials -->
@@ -70,8 +68,8 @@
             <div class="separator-box"></div>
             <li class="language-selector">
               <select id="language-select-mobile">
-                <option value="/">English</option>
-                <option value="/francais">Français</option>
+                <option value="index.html">English</option>
+                <option value="francais.html">Français</option>
               </select>
             </li>
           </div>
@@ -83,7 +81,8 @@
   <div class="breadcrumbs">
         <div class="breadcrumbs-bloc">
           <div class="breadcrumbs-separator"></div>
-          <div class="breadcrumbs-title"><a href="/contact-fr">CONTACT</a></div>
+          <div class="breadcrumbs-title">
+            <a id= "housebreadcrumbs" href="francais.html">🏠︎</a> <a id= "arrowbreadcrumbs">></a> <a href="contact-fr.html">CONTACT</a></div>
         </div>
       </div>
 
@@ -143,20 +142,20 @@
     <script>
   document.addEventListener("DOMContentLoaded", function () {
     const langSelect = document.getElementById("language-select");
-    langSelect.value = "/francais"; // Force affichage Français
+    langSelect.value = "francais.html"; // Force affichage Français
 
     langSelect.addEventListener("change", function () {
-      if (this.value !== "/francais") {
+      if (this.value !== "francais.html") {
         window.location.href = this.value;
       }
     });
   });
   document.addEventListener("DOMContentLoaded", function () {
         const langSelect = document.getElementById("language-select-mobile");
-        langSelect.value = "/francais"; // Force affichage Francais
+        langSelect.value = "francais.html"; // Force affichage Francais
     
         langSelect.addEventListener("change", function () {
-          if (this.value !== "/francais") {
+          if (this.value !== "francais.html") {
             window.location.href = this.value;
           }
         });

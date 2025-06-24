@@ -26,15 +26,14 @@
             <!-- Bloc sélection de langue -->
             <li class="language-selector">
               <select id="language-select">
-                <option value="/">English</option>
-                <option value="/francais">Français</option>
+                <option value="index.html">English</option>
+                <option value="francais.html">Français</option>
               </select>
             </li>
   
             <!-- Liens de navigation -->
-            <li><a href="/">Home</a></li>
-            <li><a href="/topics">Topics</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
   
@@ -54,9 +53,8 @@
   
           <!-- Liens du menu -->
           <ul class="mobile-nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/topics">Topics</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
   
           <!-- Carré essentials -->
@@ -70,8 +68,8 @@
             <div class="separator-box"></div>
             <li class="language-selector">
               <select id="language-select-mobile">
-                <option value="/">English</option>
-                <option value=" /francais">Français</option>
+                <option value="index.html">English</option>
+                <option value="francais.html">Français</option>
               </select>
             </li>
           </div>
@@ -84,7 +82,9 @@
   <div class="breadcrumbs">
         <div class="breadcrumbs-bloc">
           <div class="breadcrumbs-separator"></div>
-          <div class="breadcrumbs-title"><a href="/contact">CONTACT</a></div>
+          <div class="breadcrumbs-title">
+            <a id= "housebreadcrumbs" href="index.html">🏠︎</a> <a id= "arrowbreadcrumbs">></a> <a href="contact.html">CONTACT</a>
+          </div>
         </div>
       </div>
 
@@ -144,20 +144,20 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const langSelect = document.getElementById("language-select");
-        langSelect.value = "/"; // Force affichage English
+        langSelect.value = "index.html"; // Force affichage English
     
         langSelect.addEventListener("change", function () {
-          if (this.value !== "/") {
+          if (this.value !== "index.html") {
             window.location.href = this.value;
           }
         });
       });
       document.addEventListener("DOMContentLoaded", function () {
         const langSelect = document.getElementById("language-select-mobile");
-        langSelect.value = "/"; // Force affichage English
+        langSelect.value = "index.html"; // Force affichage English
     
         langSelect.addEventListener("change", function () {
-          if (this.value !== "/") {
+          if (this.value !== "index.html") {
             window.location.href = this.value;
           }
         });

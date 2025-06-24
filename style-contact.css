@@ -88,6 +88,15 @@ body {
     padding: 0;
 }
 
+body {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
 .Btn {
     width: 35px;
     height: 35px;
@@ -415,9 +424,20 @@ hr {
   .breadcrumbs .breadcrumbs-title {
     color: #f4f6fc;
     font-size: 8px;
-    font-weight: bold;
     margin: 0 auto;
     text-transform: uppercase;
+  }
+
+  #housebreadcrumbs {
+    font-size: 9px;
+    text-transform: none;
+    font-weight: bold;
+  }
+
+  #arrowbreadcrumbs {
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 9px;
   }
 
   
